@@ -8,6 +8,7 @@ import java.util.Optional;
 
 @Service
 public class UserServiceImpl implements UserService {
+    @Override
     public Optional<UserDTO> getUserById(Integer userId){
         return Optional.empty();
     }

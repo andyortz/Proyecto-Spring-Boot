@@ -1,7 +1,6 @@
 package com.infsis.MyProject.Controllers;
 
 import com.infsis.MyProject.DTOs.UserDTO;
-import com.infsis.MyProject.Models.User;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
