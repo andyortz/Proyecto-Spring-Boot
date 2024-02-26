@@ -8,7 +8,7 @@ import java.util.Optional;
 @Service
 public interface UserService {
     Optional<UserDTO> getUserById(Integer userId);
-    UserDTO saverUser(UserDTO userDTO);
+    UserDTO saveUser(UserDTO userDTO);
     UserDTO updateUser(Integer userId, UserDTO userDTO);
     void delete(Integer userId);
 }

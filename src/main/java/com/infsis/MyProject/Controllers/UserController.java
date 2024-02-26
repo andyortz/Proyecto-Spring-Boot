@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
     @GetMapping()
     public ResponseEntity<UserDTO> getUsers(){
-        UserDTO userDTO = new UserDTO("user", "user@user");
+        UserDTO userDTO = new UserDTO(1, "user", "user@user");
         return ResponseEntity.ok().body(userDTO);
     }
     @GetMapping("/{id}")
     public ResponseEntity<UserDTO> getUser(@PathVariable Integer id){
-        UserDTO userDTO = new UserDTO("user", "user@user");
+        UserDTO userDTO = new UserDTO(1, "user", "user@user");
         return ResponseEntity.ok().body(userDTO);
     }
 

@@ -17,15 +17,16 @@ public class UserServiceImpl implements UserService {
         return userDTO;
     }
     @Override
-    public UserDTO updateUser(UserDTO userDTO){
+    public UserDTO updateUser(Integer userId, UserDTO userDTO){
         return userDTO;
     }
     @Override
     public void delete(Integer userId){
 
     }
-    private UserDTO UserDto(User user){
+    private UserDTO UsertoDto(User user){
         UserDTO userDTO = new UserDTO(
+                user.getId(),
                 user.getName(),
                 user.getEmail()
         );
